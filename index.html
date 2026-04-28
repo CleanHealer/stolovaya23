@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя кухня | Вкусно как дома</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+      <div class="logo"><a href="index.html">Домашняя кухня</a></div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+			<li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><button id="theme-toggle" class="theme-toggle" title="Переключить тему">🌙</button></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <section class="hero glass fade-in">
+        <h1>Свежая еда каждый день</h1>
+        <p>У нас всё по-домашнему, прямо как у бабушки на кухне. Никаких полуфабрикатов — только ручная лепка, наваристые бульоны и свежая выпечка.</p>
+        <a href="menu.html" class="btn pulse-animation">Смотреть меню</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card glass floating-card">
+            <div class="feature-icon">🍲</div>
+            <h3>Огромный выбор</h3>
+            <p>Более 20 блюд ежедневно. Обновляем меню каждый день, чтобы вам не было скучно.</p>
+        </div>
+        <div class="feature-card glass floating-card" style="animation-delay: 0.2s;">
+            <div class="feature-icon">⏱️</div>
+            <h3>Бизнес-ланчи от 250₽</h3>
+            <p>С 09:00 до 17:00 предлагаем сытные комплексные обеды: суп, горячее, салат и напиток.</p>
+        </div>
+        <div class="feature-card glass floating-card" style="animation-delay: 0.4s;">
+            <div class="feature-icon">🤝</div>
+            <h3>Проведение мероприятий</h3>
+            <p>Организуем банкеты, корпоративы и семейные праздники в нашей столовой. Проводим поминки с должным вниманием и уважением.</p>
+        </div>
+    </section>
+
+<!-- Галерея блюд -->
+<section class="gallery-section fade-in" style="margin-bottom: 40px;">
+    <h2 style="text-align: center; margin-bottom: 10px;">📸 Галерея</h2>
+    <p style="text-align: center; opacity: 0.8; margin-bottom: 30px;">Готовим с душой — получается красиво и вкусно</p>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://avatars.mds.yandex.net/get-altay/10700956/2a0000018c3a97089d43ee12182ad5d700ae/XXXL" alt="Вид на фасад" loading="lazy">
+            <div class="gallery-caption">
+                <span>Вид на фасад</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://avatars.mds.yandex.net/get-altay/6444937/2a00000181d9a3208e079c0821a451a127ee/XXXL" alt="Интерьер зала" loading="lazy">
+            <div class="gallery-caption">
+                <span>Интерьер зала</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://avatars.mds.yandex.net/get-altay/4322051/2a00000181d9a37e06029a864e57467d727f/XXXL" alt="Уголок зала" loading="lazy">
+            <div class="gallery-caption">
+                <span>Уголок зала</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://avatars.mds.yandex.net/get-altay/16437561/2a00000197b59313d899f430b4056c2d6e43/XXXL" alt="Общий вид зала" loading="lazy">
+            <div class="gallery-caption">
+                <span>Общий вид зала</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://avatars.mds.yandex.net/get-altay/15416005/2a000001982c49d9108c776fa30a3070b721/XXXL" alt="Поднос с обедом" loading="lazy">
+            <div class="gallery-caption">
+                <span>Поднос с обедом</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://avatars.mds.yandex.net/get-altay/6477742/2a0000019068d39bde1964b60e8ca0a206c8/XXXL" alt="Вид на здание столовой" loading="lazy">
+            <div class="gallery-caption">
+                <span>Вид на здание столовой</span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Новый блок: Яндекс.Отзывы -->
+<section class="reviews-section glass fade-in">
+    <h2 style="text-align: center;">Отзывы наших гостей</h2>
+    <p style="text-align: center; opacity: 0.8; margin-bottom: 15px;">Нас рекомендуют — и это лучшая награда!</p>
+    
+    <!-- Вариант 1: Правильно настроенный iframe -->
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <iframe style="width:100%; max-width:650px; height:500px; border:1px solid var(--border-color); border-radius:12px; overflow:hidden; background: white;" 
+                src="https://yandex.ru/maps-reviews-widget/39238173844?comments&width=650"
+                allowfullscreen="true">
+        </iframe>
+    </div>
+    <!-- Новый блок: FAQ для бизнеса -->
+    <section class="faq-section glass fade-in" style="padding: 30px; margin-top: 40px;">
+        <h2 style="text-align: center;">Часто задают вопросы</h2>
+        <details class="faq-item">
+            <summary>Как оформить корпоративное питание на организацию?</summary>
+            <p>Просто оставьте заявку на странице «Контакты» или позвоните нам. Мы приедем к вам для дегустации и согласуем меню под ваш бюджет и предпочтения. Работаем по договору с безналичной оплатой.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Можно ли у вас заказать поминки?</summary>
+            <p>Да, мы проводим поминальные обеды в нашей столовой. Мы подготовим спокойную обстановку, а по меню, количеству мест и стоимость на человека сориентируем вас индивидуально.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Вы используете полуфабрикаты?</summary>
+            <p>Нет. Все блюда готовятся с нуля из свежих продуктов. Котлеты лепим вручную, тесто замешиваем сами, супы варим на натуральном бульоне.</p>
+        </details>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Столовая «Домашняя кухня». Все права защищены.</p>
+</footer>
+
+<a href="tel:+79615885461" class="call-now-btn" title="Позвонить">
+    <span class="phone-icon">📞</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

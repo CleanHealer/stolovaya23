@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню - Домашняя кухня</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo"><a href="index.html">Домашняя кухня</a></div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 style="text-align: center">Наше подробное меню</h1>
+
+      <div
+        class="menu-controls glass"
+        style="padding: 20px; margin-bottom: 30px"
+      >
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Всё меню</button>
+          <button class="filter-btn" data-filter="salads">Салаты</button>
+          <button class="filter-btn" data-filter="soups">Супы</button>
+          <button class="filter-btn" data-filter="main">Горячее</button>
+          <button class="filter-btn" data-filter="garnish">Гарниры</button>
+          <button class="filter-btn" data-filter="bakery">Выпечка</button>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            id="menu-search"
+            placeholder="🔍 Найти блюдо (например, борщ)..."
+          />
+        </div>
+      </div>
+
+      <div class="table-wrapper glass">
+        <table>
+          <thead>
+            <tr>
+              <th>Категория</th>
+              <th>Название блюда</th>
+              <th>Выход (гр/мл)</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Оливье</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Винегрет</td>
+              <td>100 гр</td>
+              <td class="price">65 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Сельдь под шубой</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Салат из свеклы с чесноком и майонезом</td>
+              <td>100 гр</td>
+              <td class="price">60 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Овощной</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Дачный</td>
+              <td>100 гр</td>
+              <td class="price">65 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Греческий</td>
+              <td>100 гр</td>
+              <td class="price">80 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Фунчеза</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Витаминный</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Монастырский</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Салат щётка</td>
+              <td>100 гр</td>
+              <td class="price">60 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Охотничий</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Курица с фасолью</td>
+              <td>100 гр</td>
+              <td class="price">80 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Салат сытный</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Салат обжорка</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Салаты</td>
+              <td class="dish-name">Красное море</td>
+              <td>100 гр</td>
+              <td class="price">80 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Соленья</td>
+              <td class="dish-name">Капуста квашеная</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Соленья</td>
+              <td class="dish-name">Морковь по-корейски</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Соленья</td>
+              <td class="dish-name">Помидоры по-кубански</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Соленья</td>
+              <td class="dish-name">Баклажаны под соусом</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="salads">
+              <td>Соленья</td>
+              <td class="dish-name">Перец острый</td>
+              <td>100 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Борщ красный</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Борщ зеленый с щавелем</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Рассольник с курицей</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп гороховый</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Солянка сборная</td>
+              <td>400 мл</td>
+              <td class="price">200 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп с лапшой куриный</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп с галушками и курицей</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп охотничий</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп с фрикадельками</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп сырный с грибами</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Окрошка</td>
+              <td>400 мл</td>
+              <td class="price">160 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп сербский</td>
+              <td>400 мл</td>
+              <td class="price">150 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Суп с лапшой грибной</td>
+              <td>400 мл</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Уха с красной рыбой</td>
+              <td>400 мл</td>
+              <td class="price">150 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="soups">
+              <td>Супы</td>
+              <td class="dish-name">Лагман со свининой</td>
+              <td>400 мл</td>
+              <td class="price">180 ₽</td>
+            </tr>
+
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Котлеты свино-говяжьи</td>
+              <td>1 шт</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Шницель куриный запеченный</td>
+              <td>100 гр</td>
+              <td class="price">130 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Желудки куриные тушеные</td>
+              <td>100 гр</td>
+              <td class="price">130 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Отбивная куриная в кляре</td>
+              <td>100 гр</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Цоцхали из курицы</td>
+              <td>100 гр</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Шпажки куриные</td>
+              <td>100 гр</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Люля-кебаб (свино-говяжий)</td>
+              <td>1 шт</td>
+              <td class="price">150 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Грудка куриная с грибами под сыром</td>
+              <td>100 гр</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Гуляш говяжий</td>
+              <td>100 гр</td>
+              <td class="price">210 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Поджарка свиная</td>
+              <td>100 гр</td>
+              <td class="price">160 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Пангасиус в кляре</td>
+              <td>100 гр</td>
+              <td class="price">120 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Минтай жареный</td>
+              <td>100 гр</td>
+              <td class="price">120 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Навага с овощами в соусе</td>
+              <td>100 гр</td>
+              <td class="price">120 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Свинина по-французски</td>
+              <td>100 гр</td>
+              <td class="price">150 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Перец фаршированный</td>
+              <td>100 гр</td>
+              <td class="price">100 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Свинина томленая</td>
+              <td>100 гр</td>
+              <td class="price">160 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Грудка куриная отварная</td>
+              <td>100 гр</td>
+              <td class="price">120 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Тортики из печени куриной</td>
+              <td>100 гр</td>
+              <td class="price">95 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Запеканка картофельная с курицей</td>
+              <td>100 гр</td>
+              <td class="price">95 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Фрикасе</td>
+              <td>100 гр</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Чахохбили из курицы</td>
+              <td>100 гр</td>
+              <td class="price">130 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Курица по-грузински</td>
+              <td>100 гр</td>
+              <td class="price">130 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Тефтели свино-говяжьи в соусе</td>
+              <td>1 шт</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Свинина по-строгановски</td>
+              <td>100 гр</td>
+              <td class="price">160 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Свинина томленая</td>
+              <td>100 гр</td>
+              <td class="price">160 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Ватрушка св-гов. с помидором под сыром</td>
+              <td>1 шт</td>
+              <td class="price">150 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Бедро куриное запеченное</td>
+              <td>100 гр</td>
+              <td class="price">100 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Плов с курицей</td>
+              <td>100 гр</td>
+              <td class="price">95 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Рулет куриный</td>
+              <td>100 гр</td>
+              <td class="price">130 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Бифштекс св-гов. с яйцом куриным</td>
+              <td>1 шт</td>
+              <td class="price">155 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Азу из свинины</td>
+              <td>100 гр</td>
+              <td class="price">150 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Курица с грибами в сливочном соусе</td>
+              <td>100 гр</td>
+              <td class="price">140 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="main">
+              <td>Горячее</td>
+              <td class="dish-name">Котлеты рыбные</td>
+              <td>1 шт</td>
+              <td class="price">140 ₽</td>
+            </tr>
+
+
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Пюре картофельное</td>
+              <td>150 гр</td>
+              <td class="price">70 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Гречка отварная</td>
+              <td>150 гр</td>
+              <td class="price">50 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Макароны отварные</td>
+              <td>150 гр</td>
+              <td class="price">50 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Рис отварной</td>
+              <td>150 гр</td>
+              <td class="price">60 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Булгур</td>
+              <td>150 гр</td>
+              <td class="price">60 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Ячневая каша</td>
+              <td>150 гр</td>
+              <td class="price">50 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Пшеничная каша</td>
+              <td>150 гр</td>
+              <td class="price">50 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Капуста тушёная</td>
+              <td>100 гр</td>
+              <td class="price">60 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Картофель по-деревенски</td>
+              <td>100 гр</td>
+              <td class="price">60 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Перловая каша</td>
+              <td>150 гр</td>
+              <td class="price">50 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="garnish">
+              <td>Гарниры</td>
+              <td class="dish-name">Рагу овощное</td>
+              <td>100 гр</td>
+              <td class="price">90 ₽</td>
+            </tr>
+
+            <tr class="menu-row" data-category="bakery">
+              <td>Выпечка</td>
+              <td class="dish-name">Булочка сдобная</td>
+              <td>1 шт</td>
+              <td class="price">65 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Выпечка</td>
+              <td class="dish-name">Запеканка творожная</td>
+              <td>100 гр</td>
+              <td class="price">80 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Выпечка</td>
+              <td class="dish-name">Хлеб белый</td>
+              <td>1 шт</td>
+              <td class="price">5 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Выпечка</td>
+              <td class="dish-name">Хлеб черный</td>
+              <td>1 шт</td>
+              <td class="price">7 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Выпечка</td>
+              <td class="dish-name">Батон</td>
+              <td>1 шт</td>
+              <td class="price">7 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Напитки</td>
+              <td class="dish-name">Компот</td>
+              <td>200 мл</td>
+              <td class="price">40 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Напитки</td>
+              <td class="dish-name">Чай</td>
+              <td>200 мл</td>
+              <td class="price">60 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Напитки</td>
+              <td class="dish-name">Кофе</td>
+              <td>200 мл</td>
+              <td class="price">65 ₽</td>
+            </tr>
+            <tr class="menu-row" data-category="bakery">
+              <td>Напитки</td>
+              <td class="dish-name">Кисель</td>
+              <td>200 мл</td>
+              <td class="price">40 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Столовая «Домашняя кухня». Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Домашняя кухня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo"><a href="index.html">Домашняя кухня</a></div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+			<li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><button id="theme-toggle" class="theme-toggle" title="Переключить тему">🌙</button></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="contact-grid">
+        <div class="glass fade-in" style="padding: 30px;">
+            <h2>Свяжитесь с нами</h2>
+            <p><strong>📍 Наш адрес:</strong> г. Краснодар, ул. Дзержинского 118</p>
+            <p><strong>📞 Телефон:</strong> <a href="tel:+79615885461" style="color: var(--accent-color);">+7 (961) 588-54-61</a></p>
+            <p><strong>⏰ Часы работы:</strong> Пн–Сб с 09:00 до 17:00 (воскресенье — выходной)</p>
+            <br>
+            <h2>Сотрудничество</h2>
+            <p style="font-size: 0.9em; margin-bottom: 15px;">Напишите нам, мы ответим на все ваши вопросы. Свяжемся с вами в ближайшее время.</p>
+            
+            <form class="contact-form" id="contact-form">
+                <input type="text" id="client-name" placeholder="Ваше Имя" required>
+                <input type="tel" id="client-phone" placeholder="Номер телефона" required>
+                <textarea id="client-message" placeholder="Цель обращения..." required></textarea>
+                <button type="submit" class="btn submit-btn">
+                    <span>Отправить заявку в Telegram</span>
+                    <span class="send-icon">✈️</span>
+                </button>
+            </form>
+        </div>
+
+<div class="map-container glass fade-in">
+    <iframe 
+        class="yandex-map-iframe"
+        src="https://yandex.ru/map-widget/v1/?ll=38.986652%2C45.122404&mode=search&sll=38.986652%2C45.122404&text=Домашняя%20кухня%2C%20улица%20Дзержинского%20118&z=18&pt=38.986652,45.122404,pm2rdm" 
+        allowfullscreen="true"
+        loading="lazy">
+    </iframe>
+</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Столовая «Домашняя кухня». Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
