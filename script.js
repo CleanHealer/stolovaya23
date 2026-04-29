@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Переключение темной/светлой темы
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
-        const currentTheme = localStorage.getItem('theme') || 'light';
+        const currentTheme = localStorage.getItem('theme') || 'dark';
         document.body.setAttribute('data-theme', currentTheme);
         themeToggle.textContent = currentTheme === 'light' ? '🌙' : '☀️';
 
