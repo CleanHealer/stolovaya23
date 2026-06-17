@@ -1,0 +1,23 @@
+{
+  "name": "stolovaya23",
+  "version": "1.0.0",
+  "description": "Домашняя кухня - Restaurant Website with Vercel Analytics",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CleanHealer/stolovaya23.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CleanHealer/stolovaya23/issues"
+  },
+  "homepage": "https://github.com/CleanHealer/stolovaya23#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
